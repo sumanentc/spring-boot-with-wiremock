@@ -90,7 +90,7 @@ class SpringBootWiremockApplicationTests {
 
 
     @ParameterizedTest
-    @CsvSource({"india,recorded/expected-response.json"})
+    @CsvSource({"india,recorded/expected-response-india.json", "australia,recorded/expected-response-australia.json"})
     void getUniversitiesForCountry(String country, String expectedResponseFilePath) throws Exception {
         String actualResponse = mockMvc.perform(get("/api/university")
                         .contentType("application/json")

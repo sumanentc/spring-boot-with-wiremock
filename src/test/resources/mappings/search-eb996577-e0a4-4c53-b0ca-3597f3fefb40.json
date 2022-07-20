@@ -1,5 +1,5 @@
 {
-  "id" : "9146c4ec-7059-4ddb-b4df-df3929a4c8aa",
+  "id" : "eb996577-e0a4-4c53-b0ca-3597f3fefb40",
   "name" : "search",
   "request" : {
     "url" : "/search?country=india",
@@ -12,14 +12,14 @@
   },
   "response" : {
     "status" : 200,
-    "bodyFileName" : "search-9146c4ec-7059-4ddb-b4df-df3929a4c8aa.json",
+    "bodyFileName" : "search-eb996577-e0a4-4c53-b0ca-3597f3fefb40.json",
     "headers" : {
       "Server" : "nginx/1.14.0",
-      "Date" : "Sat, 16 Jul 2022 12:45:15 GMT",
+      "Date" : "Wed, 20 Jul 2022 16:47:38 GMT",
       "Content-Type" : "application/json"
     }
   },
-  "uuid" : "9146c4ec-7059-4ddb-b4df-df3929a4c8aa",
+  "uuid" : "eb996577-e0a4-4c53-b0ca-3597f3fefb40",
   "persistent" : true,
   "insertionIndex" : 1
 }
