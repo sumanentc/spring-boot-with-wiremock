@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: "Sample Spring Boot Application"
+
+universitiesBaseURL: http://universities.hipolabs.com

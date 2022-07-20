@@ -1,0 +1,25 @@
+{
+  "id" : "9146c4ec-7059-4ddb-b4df-df3929a4c8aa",
+  "name" : "search",
+  "request" : {
+    "url" : "/search?country=india",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "equalTo" : "application/json, application/*+json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "search-9146c4ec-7059-4ddb-b4df-df3929a4c8aa.json",
+    "headers" : {
+      "Server" : "nginx/1.14.0",
+      "Date" : "Sat, 16 Jul 2022 12:45:15 GMT",
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "9146c4ec-7059-4ddb-b4df-df3929a4c8aa",
+  "persistent" : true,
+  "insertionIndex" : 1
+}
