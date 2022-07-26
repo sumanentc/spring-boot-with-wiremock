@@ -59,3 +59,7 @@ curl -X 'GET' \
 
 ```
 
+Run the Integration tests.
+![alt text](integration-test.png)
+
+
