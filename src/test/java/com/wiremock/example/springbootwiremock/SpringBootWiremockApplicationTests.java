@@ -62,7 +62,7 @@ class SpringBootWiremockApplicationTests {
                                     .notifier(new ConsoleNotifier(true)));
 
     @BeforeEach
-    public void startRecording() {
+    void startRecording() {
         List<WireMockProxy> proxies = wireMockConfig.getProxies();
         if (!CollectionUtils.isEmpty(proxies)) {
             for (WireMockProxy proxy : proxies) {
@@ -77,7 +77,7 @@ class SpringBootWiremockApplicationTests {
     }
 
     @AfterEach
-    public void stopRecording() {
+    void stopRecording() {
         if (!CollectionUtils.isEmpty(servers)) {
             for (WireMockServer server : servers) {
                 if (server.getRecordingStatus().getStatus().equals(RecordingStatus.Recording)) {
@@ -103,7 +103,7 @@ class SpringBootWiremockApplicationTests {
         cleanup(currentFilePath);
     }
 
-    protected Path saveResult(String path, String result) throws IOException {
+    private Path saveResult(String path, String result) throws IOException {
         String[] segments = path.split("/");
         // Grab the last segment
         String fileName = segments[segments.length - 1];
@@ -142,7 +142,7 @@ class SpringBootWiremockApplicationTests {
         return false;
     }
 
-    protected void cleanup(Path path) throws IOException {
+    private void cleanup(Path path) throws IOException {
         boolean result = Files.deleteIfExists(path);
         if (result) {
             log.info("File is deleted!");
@@ -151,7 +151,7 @@ class SpringBootWiremockApplicationTests {
         }
     }
 
-    protected String getExpectedResponse(String recordedFilePath) throws IOException {
+    private String getExpectedResponse(String recordedFilePath) throws IOException {
         Path resourceDirectory = Paths.get("src", "test", "resources");
         Path pathToFile = resourceDirectory.resolve(recordedFilePath);
         if (!pathToFile.toFile().exists()) {
