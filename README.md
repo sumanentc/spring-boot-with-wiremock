@@ -42,7 +42,7 @@ We can now use the Swagger-UI to test our application.
 ![alt text](spring-boot-with-wiremock1.png)
 
 for more detailed technical information please check my
-post : <>
+post : [Testing Spring Boot Application using WireMock and JUnit 5](https://dassum.medium.com/testing-spring-boot-application-using-wiremock-and-junit-5-d514a47ab931)
 
 ## Exploring the Rest APIs
 
